@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -6,7 +7,9 @@ export default function Home() {
       <Head>
         <title>Advices</title>
       </Head>
-      <main>Ir a tu administración de consejos</main>
+      <main>
+          <Link href="/advice-management">Ir al administrador de consejos</Link>
+          </main>
     </div>
   );
 }
